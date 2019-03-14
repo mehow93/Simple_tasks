@@ -18,11 +18,7 @@ void int_to_binary(int num){
        cout<< *p1;
     }
 }
-int main()
-{
-
-    int_to_binary(69);
-    /*int liczba= 10;
+void int_to_binary_1(int liczba){
     int bytes =5;
     int wynik [5];
     int j=0;
@@ -39,7 +35,14 @@ int main()
     for(int i=0; i<5; i++)
     {
         cout <<wynik[i];
-    }*/
+    }
+}
+int main()
+{
+
+    int_to_binary(20);
+    cout<<endl;
+     int_to_binary_1(20);
 
 
     return 0;
