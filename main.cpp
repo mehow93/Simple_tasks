@@ -6,8 +6,8 @@ using namespace std;
 
 void int_to_binary(int num){
     vector <int> output;
-     int j=0;
- while(num != 0)
+    int j=0;
+    while(num != 0)
     {
         j =  (num&1);
         num = num>>1;
@@ -15,7 +15,7 @@ void int_to_binary(int num){
     }
     for(auto p1= output.end()-1; p1 >= output.begin(); p1--)
     {
-       cout<< *p1;
+        cout<< *p1;
     }
 }
 void int_to_binary_1(int liczba){
@@ -27,7 +27,7 @@ void int_to_binary_1(int liczba){
         j =  (liczba&1);
         liczba = liczba>>1;
 
-         wynik[bytes-1] = j;
+        wynik[bytes-1] = j;
         bytes--;
 
     }
@@ -39,10 +39,10 @@ void int_to_binary_1(int liczba){
 }
 int main()
 {
-
-    int_to_binary(20);
+    int n= 17;
+    int_to_binary(n);
     cout<<endl;
-     int_to_binary_1(20);
+    int_to_binary_1(n);
 
 
     return 0;
